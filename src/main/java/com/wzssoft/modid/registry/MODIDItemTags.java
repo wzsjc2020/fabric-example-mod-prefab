@@ -1,16 +1,17 @@
-package com.wzssoft.modid.item;
+package com.wzssoft.modid.registry;
 
 import com.wzssoft.modid.MODIDMod;
 import net.minecraft.item.Item;
-import net.minecraft.tag.TagKey;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 public class MODIDItemTags {
 
+    //public static final TagKey<Item> BARREL_PACKING_BLACKLIST = MODIDItemTags.of("barrel_packing_blacklist");
 
     private static TagKey<Item> of(String name) {
-        return TagKey.of(Registry.ITEM_KEY, new Identifier(MODIDMod.MODID, name));
+        return TagKey.of(RegistryKeys.ITEM,new Identifier(MODIDMod.MODID, name));
     }
 
     public static void registerModItemTags() {

@@ -1,10 +1,6 @@
 package com.wzssoft.modid;
 
-import com.wzssoft.modid.block.MODIDBlockEntityType;
-import com.wzssoft.modid.block.MODIDBlocks;
-import com.wzssoft.modid.item.MODIDBlockItems;
-import com.wzssoft.modid.item.MODIDItemTags;
-import com.wzssoft.modid.item.MODIDItems;
+import com.wzssoft.modid.registry.*;
 import com.wzssoft.modid.utils.MODIDConstant;
 import com.wzssoft.modid.utils.MODIDLootTableModifier;
 import net.fabricmc.api.ModInitializer;
